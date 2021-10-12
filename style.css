@@ -1,0 +1,322 @@
+/* Possibly unnecessary and/or added styling indicated by an "*" */
+:root {
+    /* ------ Font sizes ------- */
+    /* font: font-weight font-size/line-height font-family; */
+    font: 400 calc(12.5px + 0.6vw)/1.8 "Lato", sans-serif;
+    /* todo Font-size may need to be refactored, maybe with minmax()? */
+
+    /* Headings */
+    --xtra-big-heading: 2.441rem;
+    --heading-one: 1.953rem;
+    --heading-two: 1.563rem;
+    --heading-three: 1.25rem;
+    --heading-four: 1rem;
+    --heading-five: 0.8rem;
+
+    /* Body */
+    --base-fontsize: 1rem;
+    --small-fontsize: 0.8rem;
+    --smaller-fontsize: 0.64rem;
+    --smallest-fontsize: 0.512rem;
+
+    /* -------- Colors --------- */
+    /* Background */
+    --bg-primary: #fefefe;
+    --bg-secondary: #282E34;
+    --bg-accent: #777;
+
+    /* Text */
+    --text-primary: #111;
+    --text-secondary: #777;
+    --text-accent: #fefefe;
+
+    /* -------- Borders -------- */
+    --b-radius: 0.5rem;
+    --b-radius-less: 0.25rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    /* For debugging */
+    /* outline: 2px solid red; */
+}
+
+html,
+body {
+    font-size: var(--base-fontsize);
+    color: var(--text-secondary);
+    background: var(--bg-primary);
+    scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    font-size: var(--heading-four);
+    padding: .2em 1em;
+    letter-spacing: 0.12em;
+    box-shadow: 0 0 10px 2px black;
+    z-index: 1;
+
+    /* Mobile first design */
+    justify-content: space-around;
+}
+
+.navbar__a {
+    color: #555;
+    
+    /* todo Need to add accessibility "outline: ;" for tabbing */
+    text-decoration: none;
+
+    /* Mobile first design */
+    padding: 0;
+}
+
+.bgimg {
+    position: relative;
+
+    /* Mobile-first design */
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    *z-index: -1;
+}
+
+.bgimg__effect--blur {
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    height: 100vh;
+}
+
+.bgimg-1 {
+    background-image: url("Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
+    height: 100vh;
+    filter: contrast(1.5);
+}
+
+.bgimg-2 {
+    background-image: url("Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
+    min-height: 400px;
+}
+
+.bgimg-4 {
+    background-image: url("Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
+    height: 100vh;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--heading-two);
+    letter-spacing: 10px;
+    text-align: center;
+    *z-index: 2;
+}
+
+.caption__bg--opaque {
+    /* Fallback color */
+    background-color: rgb(255, 255, 255);
+    /* White w/ opacity */
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #555;
+    font-weight: bold;
+    border: 3px solid #777;
+    border-radius: var(--b-radius);
+    padding: 1.5em 1.75em;
+
+}
+
+.caption__bg--clear {
+    background: transparent;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 5px #333,
+                -2px -2px 5px #333,
+                -2px 2px 5px #333,
+                2px -2px 5px #333;
+}
+
+.heading--primary {
+    font-size: var(--heading-one);
+    margin: 0;
+}
+
+.heading__subtitle {
+    font-size: var(--heading-three);
+}
+
+.heading--secondary {
+    font: var(--heading-three) Lato, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.64em;
+    text-align: center;
+}
+
+/* *Perhaps combine with .profile and .contact if practical */
+.projects {
+    text-align: center;
+
+    /* Mobile first design */
+    padding: 3em 0;
+}
+
+.projects__title {
+    padding-bottom: 1em;
+}
+.projects__title,
+.project-tile__title {
+    color: var(--text-primary);
+}
+
+hr {
+    background-color: sandybrown;
+    height: .3rem;
+    border: none;
+    border-radius: var(--b-radius);
+
+    /* Mobile first design */
+    margin: 0 0.5em;
+}    
+
+.project-tile__container {
+    display: grid;
+    gap: 2rem;
+    justify-items: center;
+
+    /* Mobile first design */
+    grid-template-columns: 1fr;
+}    
+
+.project-tile {
+    height: 15rem;
+    color: var(--text-secondary);
+}    
+
+.project-tile__img {
+    height: 10rem;
+    width: 20rem;
+    border-radius: var(--b-radius);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.project-tile__img-1 {
+    background-image: url(Img/LutherTrib.jpg);
+}
+
+.project-tile__img-2 {
+    background-image: url(Img/CoronaSurvey.jpg);
+}
+
+.project-tile__img-3 {
+    background-image: url(Img/PencilPage.jpg);
+}
+
+.project-tile__img-4 {
+    background-image: url(Img/PythonDoc.jpg);
+}
+
+.code {
+    color: var(--text-accent);
+    padding: 0.2em 0.5em;
+    background-color: var(--bg-accent);
+    border-radius: var(--b-radius-less);
+}
+
+.project-tile__caption {
+    padding-top: 1em;
+}
+
+.profile,
+.contact {
+    color: var(--text-secondary);
+    background-color: var(--bg-primary);
+    text-align: center;
+    max-width: 90ch;
+    margin: auto;
+    padding: 3em 4em;
+}
+
+.contact__a,
+.profile__a {
+    text-decoration: none;
+    color: var(--text-primary);
+    border-radius: var(--b-radius);
+}
+
+.contact__a:hover,
+.profile__a:hover {
+    color: sandybrown;
+}
+
+.contact__a:focus,
+.profile__a:focus {
+    outline: 5px solid sandybrown;
+            /* 2px solid sandybrown; */
+    outline-offset: 5px;
+}
+
+footer {
+    padding: .5em 1em;
+    background-color: var(--bg-secondary);
+    font-size: var(--small-fontsize);
+    text-align: center;
+    color: #ddd;
+}
+
+/* Turn on parallax-ish effect for comps */
+@media only screen and (min-device-width: 800px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4 {
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        justify-content: flex-end;
+    }
+
+    .navbar__a {
+        padding: 1em;
+    }
+
+    .projects {
+        padding: 3em 5em;
+    }
+
+    hr {
+        margin: 0;
+    }
+    .project-tile__container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-auto-rows: auto;
+    }
+}
