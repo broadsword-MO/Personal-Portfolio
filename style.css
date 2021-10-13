@@ -81,6 +81,7 @@ body {
     
     /* todo Need to add accessibility "outline: ;" for tabbing */
     text-decoration: none;
+    border-radius: var(--b-radius-less);
 
     /* Mobile first design */
     padding: 0;
@@ -146,7 +147,6 @@ body {
     border: 3px solid #777;
     border-radius: var(--b-radius);
     padding: 1.5em 1.75em;
-
 }
 
 .caption__bg--clear {
@@ -261,22 +261,23 @@ hr {
     padding: 3em 4em;
 }
 
-.contact__a,
-.profile__a {
+.profile__a,
+.contact__a {
     text-decoration: none;
     color: var(--text-primary);
-    border-radius: var(--b-radius);
+    border-radius: var(--b-radius-less);
 }
 
+.navbar__a:hover,
 .contact__a:hover,
 .profile__a:hover {
     color: sandybrown;
+    text-decoration: underline;
 }
-
+.navbar__a:focus,
 .contact__a:focus,
 .profile__a:focus {
     outline: 5px solid sandybrown;
-            /* 2px solid sandybrown; */
     outline-offset: 5px;
 }
 
@@ -288,7 +289,7 @@ footer {
     color: #ddd;
 }
 
-/* Turn on parallax-ish effect for comps */
+/* Turn on parallax-ish effect for computers */
 @media only screen and (min-device-width: 800px) {
 
     .bgimg-1,
@@ -305,7 +306,7 @@ footer {
     }
 
     .navbar__a {
-        padding: 1em;
+        padding: 0 1em;
     }
 
     .projects {
