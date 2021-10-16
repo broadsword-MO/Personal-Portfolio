@@ -20,15 +20,22 @@
     --smallest-fontsize: 0.512rem;
 
     /* -------- Colors --------- */
+    --darker: #111;
+    --dark: #282E34;
+    --medium: #777;
+    --off-white: #fefefe;
+    --white: white;
+    --accent: sandybrown;
+
     /* Background */
-    --bg-primary: #fefefe;
-    --bg-secondary: #282E34;
-    --bg-accent: #777;
+    --bg-primary: var(--off-white);
+    --bg-secondary: var(--dark);
+    --bg-code: var(--medium);
 
     /* Text */
-    --text-primary: #111;
-    --text-secondary: #777;
-    --text-accent: #fefefe;
+    --text-primary: var(--darker);
+    --text-secondary: var(--medium);
+    --text-accent: var(--off-white);
 
     /* -------- Borders -------- */
     --b-radius: 0.5rem;
@@ -57,29 +64,30 @@ body {
     }
 }
 
-
-.navbar {
+#navbar {
     position: fixed;
     top: 0;
     margin: 0;
-    list-style-type: none;
     width: 100%;
+    z-index: 1;
+}
+
+.navbar {
+    list-style-type: none;
     display: flex;
-    background-color: white;
+    background-color: var(--white);
     font-size: var(--heading-four);
     padding: .2em 1em;
     letter-spacing: 0.12em;
     box-shadow: 0 0 10px 2px black;
-    z-index: 1;
 
     /* Mobile first design */
     justify-content: space-around;
 }
 
+
 .navbar__a {
     color: #555;
-    
-    /* todo Need to add accessibility "outline: ;" for tabbing */
     text-decoration: none;
     border-radius: var(--b-radius-less);
 
@@ -106,23 +114,23 @@ body {
 }
 
 .bgimg-1 {
-    background-image: url("Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
+    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
     height: 100vh;
     filter: contrast(1.5);
 }
 
 .bgimg-2 {
-    background-image: url("Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
+    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
+    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
     min-height: 400px;
 }
 
 .bgimg-4 {
-    background-image: url("Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
+    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
     height: 100vh;
 }
 
@@ -139,19 +147,19 @@ body {
 
 .caption__bg--opaque {
     /* Fallback color */
-    background-color: rgb(255, 255, 255);
+    background-color: var(--white);
     /* White w/ opacity */
     background-color: rgba(255, 255, 255, 0.5);
     color: #555;
     font-weight: bold;
-    border: 3px solid #777;
+    border: 3px solid var(--medium);
     border-radius: var(--b-radius);
     padding: 1.5em 1.75em;
 }
 
 .caption__bg--clear {
     background: transparent;
-    color: #f7f7f7;
+    color: var(--text-accent);
     text-shadow: 2px 2px 5px #333,
                 -2px -2px 5px #333,
                 -2px 2px 5px #333,
@@ -190,8 +198,12 @@ body {
     color: var(--text-primary);
 }
 
+.projects__subtitle {
+    margin-bottom: 1em;
+}
+
 hr {
-    background-color: sandybrown;
+    background-color: var(--accent);
     height: .3rem;
     border: none;
     border-radius: var(--b-radius);
@@ -212,7 +224,11 @@ hr {
 .project-tile {
     height: 15rem;
     color: var(--text-secondary);
-}    
+}
+
+.project-tile__a {
+    border-radius: var(--b-radius);
+}
 
 .project-tile__img {
     height: 10rem;
@@ -224,26 +240,10 @@ hr {
 
 }
 
-.project-tile__img-1 {
-    background-image: url(Img/LutherTrib.jpg);
-}
-
-.project-tile__img-2 {
-    background-image: url(Img/CoronaSurvey.jpg);
-}
-
-.project-tile__img-3 {
-    background-image: url(Img/PencilPage.jpg);
-}
-
-.project-tile__img-4 {
-    background-image: url(Img/PythonDoc.jpg);
-}
-
 .code {
     color: var(--text-accent);
     padding: 0.2em 0.5em;
-    background-color: var(--bg-accent);
+    background-color: var(--bg-code);
     border-radius: var(--b-radius-less);
 }
 
@@ -271,13 +271,14 @@ hr {
 .navbar__a:hover,
 .contact__a:hover,
 .profile__a:hover {
-    color: sandybrown;
+    color: var(--accent);
     text-decoration: underline;
 }
 .navbar__a:focus,
+.project-tile__a:focus,
 .contact__a:focus,
 .profile__a:focus {
-    outline: 5px solid sandybrown;
+    outline: 5px solid var(--accent);
     outline-offset: 5px;
 }
 
