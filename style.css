@@ -114,23 +114,23 @@ body {
 }
 
 .bgimg-1 {
-    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
+    background-image: url("Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
     height: 100vh;
     filter: contrast(1.5);
 }
 
 .bgimg-2 {
-    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
+    background-image: url("Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
+    background-image: url("Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
     min-height: 400px;
 }
 
 .bgimg-4 {
-    background-image: url("https://raw.githubusercontent.com/broadsword-MO/Personal-Portfolio/master/Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
+    background-image: url("Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
     height: 100vh;
 }
 
