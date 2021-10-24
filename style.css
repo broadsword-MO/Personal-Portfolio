@@ -276,8 +276,8 @@ hr {
 }
 .navbar__a:focus,
 .project-tile__a:focus,
-.contact__a:focus,
-.profile__a:focus {
+.profile__a:focus,
+.contact__a:focus {
     outline: 5px solid var(--accent);
     outline-offset: 5px;
 }
