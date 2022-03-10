@@ -227,6 +227,11 @@ hr {
     border-radius: var(--b-radius);
 }
 
+.project-tile__a:hover {
+    outline: 5px solid var(--accent);
+    outline-offset: 5px;
+}
+
 .project-tile__img {
     height: 10rem;
     width: 20rem;
