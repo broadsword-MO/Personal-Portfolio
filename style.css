@@ -2,7 +2,7 @@
 :root {
     /* ------ Font sizes ------- */
     /* font: font-weight font-size/line-height font-family; */
-    font: 400 calc(12.5px + 0.6vw)/1.8 "Lato", sans-serif;
+    font: 400 calc(12.5px + 0.6vw) / 1.8 "Lato", sans-serif;
     /* todo Font-size may need to be refactored, maybe with minmax()? */
 
     /* Headings */
@@ -21,7 +21,7 @@
 
     /* -------- Colors --------- */
     --darker: #111;
-    --dark: #282E34;
+    --dark: #282e34;
     --medium: #777;
     --off-white: #fefefe;
     --white: white;
@@ -77,14 +77,13 @@ body {
     display: flex;
     background-color: var(--white);
     font-size: var(--heading-four);
-    padding: .2em 1em;
+    padding: 0.2em 1em;
     letter-spacing: 0.12em;
     box-shadow: 0 0 10px 2px black;
 
     /* Mobile first design */
     justify-content: space-around;
 }
-
 
 .navbar__a {
     color: #555;
@@ -160,10 +159,8 @@ body {
 .caption__bg--clear {
     background: transparent;
     color: var(--text-accent);
-    text-shadow: 2px 2px 5px #333,
-                -2px -2px 5px #333,
-                -2px 2px 5px #333,
-                2px -2px 5px #333;
+    text-shadow: 2px 2px 5px #333, -2px -2px 5px #333, -2px 2px 5px #333,
+        2px -2px 5px #333;
 }
 
 .heading--primary {
@@ -204,13 +201,13 @@ body {
 
 hr {
     background-color: var(--accent);
-    height: .3rem;
+    height: 0.3rem;
     border: none;
     border-radius: var(--b-radius);
 
     /* Mobile first design */
     margin: 0 0.5em;
-}    
+}
 
 .project-tile__container {
     display: grid;
@@ -219,7 +216,7 @@ hr {
 
     /* Mobile first design */
     grid-template-columns: 1fr;
-}    
+}
 
 .project-tile {
     height: 15rem;
@@ -237,7 +234,6 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .code {
@@ -270,29 +266,36 @@ hr {
 
 .navbar__a:hover,
 .contact__a:hover,
-.profile__a:hover {
+.profile__a:hover,
+.footer__a:hover {
     color: var(--accent);
     text-decoration: underline;
 }
+
 .navbar__a:focus,
 .project-tile__a:focus,
+.contact__a:focus,
 .profile__a:focus,
-.contact__a:focus {
+.footer__a:focus {
     outline: 5px solid var(--accent);
     outline-offset: 5px;
 }
 
 footer {
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     background-color: var(--bg-secondary);
     font-size: var(--small-fontsize);
     text-align: center;
     color: #ddd;
 }
 
+.footer__a {
+    color: #fff;
+    border-radius: var(--b-radius-less);
+}
+
 /* Turn on parallax-ish effect for computers */
 @media only screen and (min-device-width: 800px) {
-
     .bgimg-1,
     .bgimg-2,
     .bgimg-3,
