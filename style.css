@@ -225,11 +225,13 @@ hr {
 
 .project-tile__a {
     border-radius: var(--b-radius);
+    outline: 5px solid transparent;
+    outline-offset: 5px;
 }
 
 .project-tile__a:hover {
-    outline: 5px solid var(--accent);
-    outline-offset: 5px;
+    transition: outline, 0.5s;
+    outline-color: var(--accent);
 }
 
 .project-tile__img {
@@ -273,6 +275,7 @@ hr {
 .contact__a:hover,
 .profile__a:hover,
 .footer__a:hover {
+    transition: all, 0.5s;
     color: var(--accent);
     text-decoration: underline;
 }
