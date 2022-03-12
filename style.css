@@ -168,8 +168,9 @@ body {
     margin: 0;
 }
 
-.heading__subtitle {
+.heading--primary__subtitle {
     font-size: var(--heading-three);
+    display: none;
 }
 
 .heading--secondary {
@@ -320,6 +321,11 @@ footer {
     .navbar__a {
         padding: 0 1em;
     }
+
+    .heading--primary__subtitle {
+        display: block;
+    }
+    
 
     .projects {
         padding: 3em 5em;
