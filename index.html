@@ -1,121 +1,222 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Website portfolio of Doug Wallace" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="author" content="Doug Wallace, @broadsword-mo" />
+        <link rel="stylesheet" href="style.css" />
+        <!-- <link rel="stylesheet" href="card-flip.css"> -->
+        <link rel="stylesheet" href="up-arrow.css" />
+        <title>Personal portfolio of Doug Wallace</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Website portfolio of Doug Wallace">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Doug Wallace, @broadsword-mo">
-    <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="card-flip.css"> -->
-    <link rel="stylesheet" href="up-arrow.css">
-    <title>Personal portfolio of Doug Wallace</title>
-</head>
-
-<body>
-    <nav id="navbar">
-        <ul class="navbar">
-            <li><a href="#welcome-section" class="navbar__a">Intro</a></li>
-            <li><a href="#projects" class="navbar__a">Projects</a></li>
-            <li><a href="#profile" class="navbar__a">Profile</a></li>
-            <li><a href="#contact" class="navbar__a">Contact me</a></li>
-        </ul>
-    </nav>
-    <div id="welcome-section" class="bgimg bgimg-1">
-        <div class="bgimg__effect--blur"></div>
-        <div class="caption caption__bg--opaque">
-            <h1 class="heading--primary">Hello, I'm Doug</h1>
-            <div class="heading--primary__subtitle">and these are some projects I've done</div>
-        </div>
-    </div>
-
-    <div id="projects" class="projects">
-        <h2 class="projects__title heading--secondary">Projects</h2>
-        <p class="projects__subtitle">These are my HTML/CSS coding projects.</p>
-        <hr><br>
-        <div class="project-tile__container">
-            <div class="project-tile">
-                <h3 class="project-tile__title">Tribute Page</h3>
-                <a href="https://codepen.io/broadsword-mo/pen/abvzMVz" class="project-tile__a"><img
-                        src="Img/LutherTrib.jpg"
-                        alt="Martin Luther tribute" class="project-tile__img"></a>
-                <figcaption class="project-tile__caption">Martin Luther and the Reformation</figcaption>
-            </div>
-            <div class="project-tile">
-                <h3 class="project-tile__title">Survey Form</h3>
-                <a href="https://codepen.io/broadsword-mo/pen/MWajBPJ" class="project-tile__a"><img
-                        src="Img/CoronaSurvey.jpg"
-                        alt="Covid-19 survery form" class="project-tile__img"></a>
-                <figcaption class="project-tile__caption">Corona virus impact survey</figcaption>
-            </div>
-            <div class="project-tile">
-                <h3 class="project-tile__title">Product Landing Page</h3>
-                <a href="https://codepen.io/broadsword-mo/pen/OJyOPQj" class="project-tile__a"><img
-                        src="Img/PencilPage.jpg"
-                        alt="Pencil products landing page" class="project-tile__img"></a>
-                <figcaption class="project-tile__caption">3PE pencils webpage</figcaption>
-            </div>
-            <div class="project-tile">
-                <h3 class="project-tile__title">Technical Documentation</h3>
-                <a href="https://codepen.io/broadsword-mo/pen/VwvygyP" class="project-tile__a"><img
-                        src="Img/PythonDoc.jpg"
-                        alt="Python technical document" class="project-tile__img"></a>
-                <figcaption class="project-tile__caption">Introduction to Python 3.8 (unofficial)</figcaption>
+    <body>
+        <nav id="navbar">
+            <ul class="navbar">
+                <li><a href="#welcome-section" class="navbar__a">Intro</a></li>
+                <li><a href="#projects" class="navbar__a">Projects</a></li>
+                <li><a href="#profile" class="navbar__a">Profile</a></li>
+                <li><a href="#contact" class="navbar__a">Contact me</a></li>
+            </ul>
+        </nav>
+        <div id="welcome-section" class="bgimg bgimg-1">
+            <div class="bgimg__effect--blur"></div>
+            <div class="caption caption__bg--opaque">
+                <h1 class="heading--primary">Hello, I'm Doug</h1>
+                <div class="heading--primary__subtitle">
+                    and these are some projects I've done
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="profile" class="bgimg bgimg-2">
-        <div class="caption caption__bg--clear">
-            <h2 class="heading--secondary">Profile</h2>
-        </div>
-    </div>
-
-    <div>
-        <div class="profile">
-            <p>I'm Doug Wallace and I'm working toward being a front-end developer. I live on an off-grid, solar
-                powered, homestead-in-progress way back in the hills of the Missouri Ozarks with my wife, Amanda, and
-                our children. Over the last two years, as time has permitted, I've been going through
-                <a href="https://www.freecodecamp.org" class="profile__a">freeCodeCamp</a>'s wonderful curriculum on
-                HTML, CSS and JavaScript. This has
-                been supplemented with lots of other
-                material from various authors of which the <a
-                    href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw" class="profile__a">Kevin Powell</a>
-                YouTube videos, the <a href="https://scrimba.com/learn/cssvariables" class="profile__a">Per
-                    Harald
-                    Borgen</a> Scrimba videos and the
-                <a href="https://syntax.fm/" class="profile__a">Syntax</a> podcast with Scott Tolinski and Wes Bos are
-                my current
-                favorites.
+        <div id="projects" class="projects">
+            <h2 class="projects__title heading--secondary">Projects</h2>
+            <p class="projects__subtitle">
+                These are my HTML/CSS coding projects.
             </p>
+            <hr />
+            <br />
+            <div class="project-tile__container">
+                <div class="project-tile">
+                    <h3 class="project-tile__title">Tribute Page</h3>
+                    <a
+                        href="https://codepen.io/broadsword-mo/pen/abvzMVz"
+                        class="project-tile__a"
+                        ><img
+                            src="Img/LutherTrib.jpg"
+                            alt="Martin Luther tribute"
+                            class="project-tile__img"
+                    /></a>
+                    <figcaption class="project-tile__caption">
+                        Martin Luther and the Reformation
+                    </figcaption>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-tile__title">Survey Form</h3>
+                    <a
+                        href="https://codepen.io/broadsword-mo/pen/MWajBPJ"
+                        class="project-tile__a"
+                        ><img
+                            src="Img/CoronaSurvey.jpg"
+                            alt="Covid-19 survery form"
+                            class="project-tile__img"
+                    /></a>
+                    <figcaption class="project-tile__caption">
+                        Corona virus impact survey
+                    </figcaption>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-tile__title">Product Landing Page</h3>
+                    <a
+                        href="https://codepen.io/broadsword-mo/pen/OJyOPQj"
+                        class="project-tile__a"
+                        ><img
+                            src="Img/PencilPage.jpg"
+                            alt="Pencil products landing page"
+                            class="project-tile__img"
+                    /></a>
+                    <figcaption class="project-tile__caption">
+                        3PE pencils webpage
+                    </figcaption>
+                </div>
+                <div class="project-tile">
+                    <h3 class="project-tile__title">Technical Documentation</h3>
+                    <a
+                        href="https://codepen.io/broadsword-mo/pen/VwvygyP"
+                        class="project-tile__a"
+                        ><img
+                            src="Img/PythonDoc.jpg"
+                            alt="Python technical document"
+                            class="project-tile__img"
+                    /></a>
+                    <figcaption class="project-tile__caption">
+                        Introduction to Python 3.8 (unofficial)
+                    </figcaption>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div id="contact" class="bgimg bgimg-3">
-        <div class="caption caption__bg--clear">
-            <h2 class="heading--secondary">Contact me</h2>
+        <div id="profile" class="bgimg bgimg-2">
+            <div class="caption caption__bg--clear">
+                <h2 class="heading--secondary">Profile</h2>
+            </div>
         </div>
-    </div>
 
-    <div>
-        <div class="contact">
-            <p>My work can be found on <a id="profile-link" href="https://www.freecodecamp.org/broadsword-mo"
-                    target="_blank" rel="noopener noreferrer" class="contact__a">freeCodeCamp</a>, <a
-                    href="https://github.com/broadsword-MO" target="_blank" rel="noopener noreferrer"
-                    class="contact__a">Github</a> and <a href="https://codepen.io/broadsword-mo" target="_blank"
-                    rel="noopener noreferrer" class="contact__a">Codepen</a>.<br>You can also connect with me on <a
-                    href="https://www.linkedin.com/in/doug-wallace-786524207/" target="_blank" rel="noopener noreferrer"
-                    class="contact__a">LinkedIn</a><!-- and others(?)-->.</p>
+        <div>
+            <div class="profile">
+                <p>
+                    I'm Doug Wallace and I'm working toward being a front-end
+                    developer. I live on an off-grid, solar powered,
+                    homestead-in-progress way back in the hills of the Missouri
+                    Ozarks with my wife, Amanda, and our children. Over the last
+                    several years, as time has permitted, I've been going
+                    through
+                    <a href="https://www.freecodecamp.org" class="profile__a"
+                        >freeCodeCamp</a
+                    >'s wonderful curriculum on HTML, CSS and JavaScript. This
+                    has been supplemented with lots of other material from
+                    various authors of which the
+                    <a
+                        href="https://www.youtube.com/channel/UCJZv4d5rbIKd4QHMPkcABCw"
+                        class="profile__a"
+                        >Kevin Powell</a
+                    >
+                    YouTube videos, the
+                    <a
+                        href="https://scrimba.com/learn/cssvariables"
+                        class="profile__a"
+                        >Per Harald Borgen</a
+                    >
+                    Scrimba videos and the
+                    <a href="https://syntax.fm/" class="profile__a">Syntax</a>
+                    podcast with Scott Tolinski and Wes Bos are my current
+                    favorites.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="bgimg bgimg-4">
-        <div class="caption caption__bg--clear">
-            <h2 class="heading--secondary">Thanks for visiting!</h2>
+        <div id="contact" class="bgimg bgimg-3">
+            <div class="caption caption__bg--clear">
+                <h2 class="heading--secondary">Contact me</h2>
+            </div>
         </div>
-    </div>
-    <div class="up-arrow"><a href="#welcome-section">^</a><span>Return to top</span></div>
-    <footer>&copy; Copyright 2022 Doug Wallace, freeCodeCamp/Github/CodePen: @broadsword-mo<br>First and last photo by <a href="https://unsplash.com/@joshclemence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="footer__a">Josh Clemence</a> on <a href="https://unsplash.com/s/photos/josh-clemence-ozarks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="footer__a">Unsplash</a><br>Second and third photo by <a href="https://unsplash.com/@kmitchhodge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="footer__a">K. Mitch Hodge</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" class="footer__a">Unsplash</a>
-    </footer>
-</body>
+
+        <div>
+            <div class="contact">
+                <p>
+                    My work can be found on
+                    <a
+                        id="profile-link"
+                        href="https://www.freecodecamp.org/broadsword-mo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact__a"
+                        >freeCodeCamp</a
+                    >,
+                    <a
+                        href="https://github.com/broadsword-MO"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact__a"
+                        >Github</a
+                    >
+                    and
+                    <a
+                        href="https://codepen.io/broadsword-mo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact__a"
+                        >Codepen</a
+                    >.<br />You can also connect with me on
+                    <a
+                        href="https://www.linkedin.com/in/doug-wallace-786524207/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact__a"
+                        >LinkedIn</a
+                    ><!-- and others(?)-->.
+                </p>
+            </div>
+        </div>
+
+        <div class="bgimg bgimg-4">
+            <div class="caption caption__bg--clear">
+                <h2 class="heading--secondary">Thanks for visiting!</h2>
+            </div>
+        </div>
+        <div class="up-arrow">
+            <a href="#welcome-section">^</a><span>Return to top</span>
+        </div>
+        <footer>
+            &copy; Copyright 2022 Doug Wallace, freeCodeCamp/Github/CodePen:
+            @broadsword-mo<br />First and last photo by
+            <a
+                href="https://unsplash.com/@joshclemence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                class="footer__a"
+                >Josh Clemence</a
+            >
+            on
+            <a
+                href="https://unsplash.com/s/photos/josh-clemence-ozarks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                class="footer__a"
+                >Unsplash</a
+            ><br />Second and third photo by
+            <a
+                href="https://unsplash.com/@kmitchhodge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                class="footer__a"
+                >K. Mitch Hodge</a
+            >
+            on
+            <a
+                href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                target="_blank"
+                class="footer__a"
+                >Unsplash</a
+            >
+        </footer>
+    </body>
 </html>

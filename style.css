@@ -2,7 +2,7 @@
 :root {
     /* ------ Font sizes ------- */
     /* font: font-weight font-size/line-height font-family; */
-    font: 400 calc(12.5px + 0.6vw) / 1.8 "Lato", sans-serif;
+    font: 400 calc(12.5px + 0.6vw) / 1.8 'Lato', sans-serif;
     /* todo Font-size may need to be refactored, maybe with minmax()? */
 
     /* Headings */
@@ -43,8 +43,9 @@
 }
 
 * {
-    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
     /* For debugging */
     /* outline: 2px solid red; */
@@ -102,7 +103,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    *z-index: -1;
+    /* z-index: -1; */ /* Appears unnecessary */
 }
 
 .bgimg__effect--blur {
@@ -113,23 +114,23 @@ body {
 }
 
 .bgimg-1 {
-    background-image: url("Img/josh-clemence-KiskZOMfDro-unsplash.jpg");
+    background-image: url('Img/josh-clemence-KiskZOMfDro-unsplash.jpg');
     height: 100vh;
     filter: contrast(1.5);
 }
 
 .bgimg-2 {
-    background-image: url("Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg");
+    background-image: url('Img/k-mitch-hodge-keotiKDPepg-unsplash.jpg');
     min-height: 400px;
 }
 
 .bgimg-3 {
-    background-image: url("Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg");
+    background-image: url('Img/k-mitch-hodge-tpHJ_8aMC1I-unsplash.jpg');
     min-height: 400px;
 }
 
 .bgimg-4 {
-    background-image: url("Img/josh-clemence-vORp9xB52pQ-unsplash.jpg");
+    background-image: url('Img/josh-clemence-vORp9xB52pQ-unsplash.jpg');
     height: 100vh;
 }
 
@@ -141,7 +142,7 @@ body {
     font-size: var(--heading-two);
     letter-spacing: 10px;
     text-align: center;
-    *z-index: 2;
+    /* z-index: 2; */ /* Apprears unnecessary */
 }
 
 .caption__bg--opaque {
@@ -325,7 +326,6 @@ footer {
     .heading--primary__subtitle {
         display: block;
     }
-    
 
     .projects {
         padding: 3em 5em;
