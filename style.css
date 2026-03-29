@@ -2,7 +2,8 @@
 :root {
     /* ------ Font sizes ------- */
     /* font: font-weight font-size/line-height font-family; */
-    font: 400 calc(12.5px + 0.6vw) / 1.8 'Lato', sans-serif;
+    /* font: 400 calc(12.5px + 0.6vw) / 1.8 'Lato', sans-serif; */
+    font: 400 calc(12.5px + 0.6vw) / 1.8 'Manrope', 'Lato', sans-serif;
     /* todo Font-size may need to be refactored, maybe with minmax()? */
 
     /* Headings */
